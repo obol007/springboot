@@ -33,6 +33,6 @@ build/
 
 target
 mvnw
-mvnw.cmd
-.mvn/wrapper
+.cmd
+.mvn/**
 
