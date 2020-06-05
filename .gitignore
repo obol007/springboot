@@ -33,6 +33,6 @@ build/
 
 target
 mvnw
-.cmd
-.mvn/**
+*.cmd
+*.mvn
 
