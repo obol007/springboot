@@ -35,4 +35,12 @@ public class PersonController {
        return personService.getPersonById(id)
                .orElse(null);
     }
+    @DeleteMapping("/{id}")
+    public void deletePersonById(@PathVariable("id") UUID id){
+       personService.deletePerson(id);
+    }
+    @PutMapping("/{id}")
+    public void updatePerson(@PathVariable("id") UUID id, @RequestBody Person newPerson){
+       personService.updatePerson(id, newPerson);
+    }
 }
